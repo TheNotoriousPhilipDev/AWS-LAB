@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: A sample CloudFormation template to work with s3 
+# Resources section
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+# we do not need to supply a buck et name as aws will generate a random one for us
