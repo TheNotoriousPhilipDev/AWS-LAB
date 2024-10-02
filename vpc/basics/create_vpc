@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Create our vpc 
+
+aws ec2 create-vpc --cidr-block "172.1.0.0/16" \ 
+--tag-specification 'ResourceType=vpc, Tags=[{Key=name, Value=my-vpc-3 }]' \
+--region ca-central-1 --query Vpc.VpcId  
+
+
+# Create an igw
+aws ec2-create-internet-gateway \
+--query InternetGateway.InternetGatewayId
+--output text 
+
+# Attach an igw
+
+
+# Attach an igw
+
+
+# create a new subnet 
+
+
+# explicitly associate a subnet
+
+
+# add a route for our RT to our igw 
